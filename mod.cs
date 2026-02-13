@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static UnityEngine.Rendering.HighDefinition.ProbeSettings.Frustum;
 
-namespace ScamLineMenu
+namespace ScamLineMenu // i forgot the change namespace lol but already you need to change so its not a problem
 {
     public class Mod : MonoBehaviour
     {
@@ -22,7 +22,7 @@ namespace ScamLineMenu
         private Vector2 offset1 = Vector2.zero;
         private Color selectedColor = Color.white;
 
-        void KeyBoardStuff()
+        void KeyBoardStuff() // its keyboard void you can change the wich key to open menu and unload
         {
             if (Input.GetKeyDown(KeyCode.PageUp))
             {
@@ -33,7 +33,7 @@ namespace ScamLineMenu
                 Loader.Unload();
             }
         }
-        void Update()
+        void Update() // this area for codes gonna work all time like godmod
         {
             if (loop1) // if loop 1 checked the code gonna work all the time
             {
